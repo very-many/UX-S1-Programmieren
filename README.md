@@ -1,6 +1,9 @@
 # Lösungen zu "Exercise Base SoSe 2025"
+
 Les es dir halt durch und klau es oder so, idc.
+
 ---
+
 # Exercise Base SoSe 2025
 
 Dieses Projekt dient als Basis für die Programmieraufgabe im Sommersemester
