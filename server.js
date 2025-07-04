@@ -6,9 +6,13 @@ import rechnenMitZahlenHandler from "./lib/rechnenMitZahlen.js";
 import booleanHandler from "./lib/booleanAuswertung.js";
 import arbeitenMitArraysHandler from "./lib/arbeitenMitArrays.js";
 
-import loginHandler from "./lib/loginUeberpruefen.js";
+import zahlenVergleichenHandler from "./lib/zahlenVergleichen.js";
+import arrayVergleichHandler from "./lib/arrayVergleich.js";
 import komplexerVergleichHandler from "./lib/komplexerVergleich.js";
+
+import loginHandler from "./lib/loginUeberpruefen.js";
 import pokemonRouteHandler from "./lib/pokemonRoute.js";
+import gleichheitPrüfenHandler from "./lib/gleichheitPrüfen.js";
 
 const server = express();
 
@@ -21,9 +25,14 @@ server.get("/string", stringVerarbeitungHandler);
 server.get("/rechnen", rechnenMitZahlenHandler);
 server.get("/boolean", booleanHandler);
 server.get("/array-summe", arbeitenMitArraysHandler);
+/* Vergleichsoperatoren */
+server.get("/gleichheit-pruefen", gleichheitPrüfenHandler);
+server.get("/zahlen-vergleich", zahlenVergleichenHandler);
+server.get("/array-vergleich", arrayVergleichHandler);
+server.get("/komplexer-vergleich", komplexerVergleichHandler);
+
 
 server.get("/login", loginHandler);
-server.get("/komplexer-vergleich", komplexerVergleichHandler);
 
 /* Bonus Aufgaben */
 server.get("/pokemon", pokemonRouteHandler);
